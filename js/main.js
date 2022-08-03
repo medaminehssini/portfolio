@@ -108,13 +108,28 @@
         obj.table.push({ name: name, email: email, subject: subject, message: message });
 
 
+        $.ajax({
+            type: "post",
+            url: "https://us18.list-manage.com/contact-form?u=8f0a8ded6bb04ef4b234e2cb8&form_id=d4bed208e3d43584297f1162a7a60606",
+            data: {
+                fields: {
+                    '930': email,
+                    '934': subject,
+                    '938': message,
+                    '942': name
+                },
+                subscribe: false
+            }
+        }).done(function (response) {
+            console.log(response);
+            $('#name').val('');
+            $('#subject').val('');
+            $('#email').val('');
+            $('#message').val('');
+        });
 
 
 
-        $('#name').val('');
-        $('#subject').val('');
-        $('#email').val('');
-        $('#message').val('');
 
     })
 })(jQuery);
