@@ -43,7 +43,7 @@
 
             $('html, body').animate({
                 scrollTop: $(this.hash).offset().top - 0
-            }, 1500, 'easeInOutExpo');
+            }, 0, 'easeInOutExpo');
         }
     });
 
