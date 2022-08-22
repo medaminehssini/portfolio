@@ -576,33 +576,34 @@
                 <!-- Contact Start -->
                 <section class="py-5 wow fadeInUp" data-wow-delay="0.1s" id="contact">
                     <h1 class="title pb-3 mb-5">Contact Me</h1>
-                    <form method="post" id="contact">
+                    <form method="post" action="https://formsubmit.co/medhssinihssini@gmail.com" id="contact">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" id="name" class="form-control border-0 bg-secondary"
+                                    <input type="text" id="name" name="name" class="form-control border-0 bg-secondary"
                                         placeholder="Your Full Name">
                                     <label for="name">Your Full Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" id="email" class="form-control border-0 bg-secondary"
-                                        placeholder="Your Email">
+                                    <input type="email" id="email" name="email"
+                                        class="form-control border-0 bg-secondary" placeholder="Your Email">
                                     <label for="email">Your Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <input type="text" class="form-control border-0 bg-secondary" id="subject"
-                                        placeholder="Subject">
+                                        placeholder="Subject" name="_subject">
                                     <label for="subject">Subject</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <textarea id="message" class="form-control border-0 bg-secondary"
-                                        placeholder="Leave a message here" style="height: 200px"></textarea>
+                                        placeholder="Leave a message here" name="message"
+                                        style="height: 200px"></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
